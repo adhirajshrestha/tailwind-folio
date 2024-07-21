@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+</head>
+
+<body>
+    <div class="bg-gray-300 font-poppins md:items-center md:justify-between shadow">
+        <header class="bg-white ">
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+            <nav class=" flex justify-between items-center w-[92%] ">
+
+                <div class=" md:w-25 md:h-20 inline md:text-4xl pt-5 md:px-28 font-serif py-3 pl-5 text-2xl">Richard</div>
+
+                <!--  NAV bar on the top -->
+                
+                <div class="nav-links sm:static sm:min-h-fit absolute bg-white min-h-[50vh] left-0 top-[-100%]  sm:w-auto w-full flex items-center px-3 ">
+                    <ul class=" flex items-center sm:items-center sm:flex-row flex-col  gap-2">
+
+                        <li class="justify-center mx-4 my-6 sm:my-0">
+                            <a href="#" class=" px-3 py-1  text-xl  hover:text-gray-500 ">Home</a>
+                        </li>
+
+
+                        <li class="justify-center mx-4 my-6 md:my-0">
+                            <a href="#" class=" px-3 py-1  text-xl  hover:text-gray-500 ">Work</a><br>
+                        </li>
+
+
+                        <li class="justify-center  mx-4 my-6 md:my-0">
+                            <a href="#" class=" px-3 py-1  text-xl hover:text-gray-500"> About</a><br>
+                        </li>
+
+
+                        <li class="justify-center mx-4 my-6 md:my-0">
+                            <a href="#" class=" px-3 py-1  text-xl hover:text-gray-500"> Projects</a><br>
+
+                        </li>
+
+
+                        <li class="  justify-cente mx-4 my-6 md:my-0">
+                            <a href="#" class=" px-3 py-1  text-xl hover:text-gray-500">Services</a><br>
+                        </li>
+
+                    
+                        <li class="justify-center mx-4 my-6 md:my-0">
+                            <a href="#"
+                                class=" ml-7 border-2  border-black pl-7 pr-7 pt-2 pb-2 hover:bg-black hover:text-white">Let's
+                                chat</a>
+                                
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-6 md:hidden">
+                      
+                        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-xl cursor-pointer "></ion-icon>
+                </div>
+
+        </header><!--The nav bar ends-->
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e) {
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+
+
+
+
+
+        <!--The img and the content on the left -->
+
+        <div class="  md:max-w-[1320px] md:py-[80]  py-0 flex mx-auto md:tracking-wide max-w-">
+
+            <div class="basis-[55%] px-2">
+                <h1 class="md:text-6xl font-bold md:pl-20 md:pt-14 text-3xl pl-2 pt-7 ">Hi! I am<br> Richard Brian</h1><br>
+                <p class="py-7  md:text-xl md:pl-20 pt-5 pl-2">Designing user interfaces for <b> 7 years </b><br>as a product
+                    designer</p>
+                <div class=" flex  md:pl-20 md:pt-14 pl-2 pt-5">
+                    <button
+                        class="md:font-medium md:text-xl  bg-red-500 text-white md:px-4 md:py-4 md:pr-8 md:pl-8 px-4 py-2 hover:bg-red-400 hover:text-gray-900">Hire
+                        me </button>
+                    <button class="md:pl-5 font-medium ml-11 md:text-xl text-l ">Projects</button>
+                </div>
+
+                <div class="md:pl-20 md:pt-5 pl-2 pt-5">
+                    <p class="md:text-2xl md:pt-10 text-xl pt-4 "><b>+84<br></p>
+                    <p class="font-light text-lg pt-2">Clients on work <br>worldwide</b></p>
+                </div><br>
+                <div class="flex items-start md:space-x-16 md:pl-20 md:pt-6 pl-2">
+                    <div class="pl-3    ">
+                        <p class="md:text-2xl font-bold text-xl ">572</p>
+                        <p class="md:font-medium ">Projects Done</p>
+                    </div>
+                    <div class="pl-6">
+                        <p class="md:text-2xl font-bold text-xl ">Contact</p>
+                        <p class="md:font-medium">Heloo@richardbrian.com</p>
+                    </div>
+                </div><br>
+
+                <div class="bg-gray-700 absolute md:pr-24 pl-8 md:flex md:items-start md:justify-between md:pb-1 flex">
+                    <div class="md:w-1/3 md:pr-40 pr-40 md:pl-8">
+                        <div class="text-white font-bold text-lg md:text-xl pt-4">Project<br>Statistics 2022</div>
+                        <div class="pt-2">
+                            <button class="bg-yellow-300 font-medium px-5 py-2 mt-4 md:px-3 md:py-2">Know More</button>
+                        </div>
+                    </div>
+                    <div class="pt-7 md:mt-0 md:ml-12 md:w-1/2 pr-12">
+                        <p class="text-white">Website Design 75</p><br>
+                        <p class="text-white mt-2">Mobile App Design 64</p><br>
+                        <p class="text-white mt-2">Brand Identity 75</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--image-->
+            <div class="md:basis-[45%] w-full h-25 relative basis-[30%]">
+                <img class="md:w-90 md:object-cover "
+                    src="https://images.unsplash.com/photo-1583071299210-c6c113f4ac91?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image"
+                    class="object-cover">
+                <div class="absolute inset-0 flex flex-col justify-end items-center">
+                    <h1 class="absolute md:top-16 sm:text-xl top-44 mr-0.5">Create Your site in <b>Figma</b><br><b>Sketch</b> or <b>XD</b>
+                    </h1>
+                    <div class="md:flex md:items-center md:w-96 md:mb-4 md:pb-6 flex w-full md:mr-0 mr-48 mb-2">
+                        <input 
+                        type="search" 
+                        name="search"   
+                        id="search" 
+                        placeholder="Subscribe my Newsletter"
+                        class=" focus:outline-none text-xs md:text-base  p-1.5 md:mb-0 md:w-full">
+                        
+                        <button class="bg-black text-white md:px-4 md:py-3.5 p-1.5 text-xs">Search</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+</body>
+
+</html>
